@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <style>
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:brown;
+        }
+        h4{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body style="background-color: cornsilk; border:5px solid rgb(73, 205, 29) ;padding:30px">
+    <h2>1.What are the different types of HTTP requests?</h2>
+    <h4>HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to 
+        specify what action is to be performed on a particular resource. The most commonly
+         used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. These are equivalent 
+         to the CRUD operations (create, read, update, and delete).</h4>
+         <h4>GET: GET request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.</h4>
+         <h4>POST: POST request is used to send data (file, form data, etc.) to the server. On successful creation, it returns an HTTP status code of 201.</h4>
+         <h4>PUT: A PUT request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload. If there are no resources that match the request, it will generate one.
+
+        </h4>
+        <h4>PATCH: PATCH is similar to PUT request, but the only difference is, it modifies a part of the data. It will only replace the content that you want to update.
+
+        </h4>
+        <h4>DELETE: A DELETE request is used to delete the data on the server at a specified location.
+
+            Now, let’s understand all of these request methods by example. We have set up a small application that includes a NodeJS server and MongoDB database. NodeJS server will handle all the requests and return back an appropriate response.
+            
+            </h4>
+    <h2>2.Explain the concept of middleware in Node.js</h2>
+    <h4>The middleware in node. js is a function that will have all the access for requesting an object, 
+        responding to an object, and moving to the next middleware function in the 
+        application request-response cycle.</h4>
+    <h2>3.Explain CORS.</h2>
+    <h4>CORS stands for Cross-Origin Resource Sharing . It allows us to relax the security applied to an API. This is done by bypassing the Access-Control-Allow-Origin headers, which specify which origins can access the API.</h4>
+    <h2>4.What is Express.How it helps you to create a backend application.</h2>
+    <h4>Express is a node js web application framework that provides broad features for
+         building web and mobile applications. It is used to build a single page, multipage, 
+         and hybrid web application. It's a layer built on the top of the Node js that helps manage servers 
+         and routes</h4>
+    <h2>5.Explain min 5 status codes gets used in Backend development.</h2>
+    <h4>The HTTP 200 OK response code implies a successful request.</h4>
+    <h4>404 Not Found
+        This means the requested resource is unavailable on the server, or maybe the URL has been mistyped in the browser. This can also indicate that the endpoint is correct, but the resource does not exist in an API. This response may be used instead of 403 to conceal the existence of a resource from an unauthorized client.</h4>
+        <h4>201 Created
+            This indicates that the request was completed, and a new resource was created as a result. The URI(s) sent in the response entity can refer to the newly generated help, with a Location header field providing the most particular URI for the resource.</h4>
+            <h4>500 Internal Server Error
+                The server ran into an unanticipated problem that stopped it from completing the request.</h4>
+                <h4>503 Service Not Available
+                    This happens due to a sudden overload or server maintenance and it means the server cannot handle the request.
+                    
+                    </h4>
+    <h2>6.Difference between HTTP and HTTPS.</h2>
+    <h4>HTTP: When the data transfer in HTTP protocol it just travels in the clear text format. HTTPS: It simply makes encryption when the request is traveling from the browser to the web server so it is tough to sniff that information</h4>
+    <h2>7.What are JWT tokens</h2>
+    <h4>JWTs are mainly used for authentication. After a user signs in to an application, the application then assigns JWT to that user. Subsequent requests by the user will include the assigned JWT. This token tells the server what routes, services, and resources the user is allowed to access.</h4>
+</body>
+</html>
